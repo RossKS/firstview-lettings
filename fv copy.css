@@ -236,6 +236,7 @@ figcaption {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
+/* end tenancy styling */
 
 
 
@@ -296,7 +297,7 @@ justify-content: space-between;
   .title-banner {
     color: black;
     background:
-      url("key-in-door-cropped.webp"), no-repeat;
+      url("images/key-in-door-cropped.webp"), no-repeat;
       background-size: cover;
       height: 450px;
       text-align: center;
