@@ -1,9 +1,7 @@
 body {
   max width: 70%;
   background-color: #FFF;
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0px;
+  margin: 0;
 }
 
 body {
@@ -220,11 +218,14 @@ figcaption {
 }
 
 /* Tenancy styling */
-.tenancy-title {
-  margin-top: 10px;
+.tenancy-title h2 {
+  margin-top: 20px;
+  padding-top: 10px;
   font-family: 'Arimo', sans-serif;
   color: black;
   font-size: 1.8em;
+
+  text-align: center;
 }
 .tenancy-body {
   width: 80%;
