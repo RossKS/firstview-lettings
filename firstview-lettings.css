@@ -118,7 +118,7 @@ header,
 
 .dropdown:hover  .dropdown-content  {
   display: block;
-  width: 150px;
+  width: 200px;
 }
 
 .dropdown a {
@@ -176,7 +176,7 @@ figcaption {
 
 .main-footer a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: verdana, sans-serif;
 }
 
@@ -185,10 +185,21 @@ figcaption {
 }
 
 .main-footer {
-  padding: 10px;
-  background-color: darkgray;
-  border-top: solid firebrick 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 4);
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background-color: silver;
+  /* border-top: solid firebrick 2px; */
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 4); */
+  font-size: 12px;
+}
+
+.webdev {
+  text-align: center;
+  color: silver;
+  font-size: 12px;
+  font-style: verdana;
+  text-decoration-style: none;
 }
 
 .services {
@@ -218,7 +229,7 @@ figcaption {
 }
 
 /* services styling */
-.tenancy-title h2, .tenant-introduction-title h2,.inventory-prep-body h2, .letting-management-title h2 {
+.tenancy-title h2, .tenant-introduction-title h2,.inventory-prep-title h2, .letting-management-title h2, .tenant-enquiries-title h2 {
   margin-top: 20px;
   padding-top: 10px;
   font-family: 'Arimo', sans-serif;
@@ -227,11 +238,11 @@ figcaption {
 
   text-align: center;
 }
-.tenancy-body, .tenant-introduction-body, .inventory-prep-body, .letting-management-body {
-  width: 80%;
+.tenancy-body, .tenant-introduction-body, .inventory-prep-body, .letting-management-body, .tenant-enquiries-body {
+  width: 75%;
   margin: 0 auto;
   font-family: 'Helvetica Neue', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   padding-top: 5px;
   padding-bottom: 20px;
   margin-bottom: 20px;
