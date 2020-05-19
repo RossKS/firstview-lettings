@@ -219,6 +219,24 @@ figcaption {
   flex: 1;
 }
 
+/* Tenancy styling */
+.tenancy-title {
+  margin-top: 10px;
+  font-family: 'Arimo', sans-serif;
+  color: black;
+  font-size: 1.8em;
+}
+.tenancy-body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+
 
 
 /* .photo-break {
