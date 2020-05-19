@@ -263,8 +263,6 @@ justify-content: space-between;
   min-height: calc(100vh - 40px);
   }
 
-
-
   /* header img,
  .dropdown a {
    display: block;
@@ -275,23 +273,6 @@ justify-content: space-between;
   /* .dropdown a, nav .dropdown {
     display: block;
     text-align: center;
-  } */
-
-  /* .dropdown a {
-    float: right;
-  } */
-
-  /* p {
-  font-family: verdana;
-  } */
-
-
-  /* header img {
-    float: left;
-  } */
-
-  /* nav {
-    margin-top: 20px;
   } */
 
   .title-banner {
@@ -307,14 +288,12 @@ justify-content: space-between;
 
   .title-banner h1 {
       color: #fff;
-
       width: 80%;
       margin: auto;
       text-align: center;
       padding-top: 160px;
       font-family: 'Arimo', sans-serif;
       margin-top: 0;
-
     }
 
   /* .primary-col {
@@ -352,67 +331,60 @@ justify-content: space-between;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 6);
   } */
 
-}
 
- /* .wrap .call-to-action {
+
+  .services h2 {
+    color: firebrick;
+  }
+
+  .services ul {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin:  0 auto;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+  }
+
+  .services li {
+    font-family: 'Helvetica Neue';
+    margin: 5px;
+    list-style: none;
+    font-size: 20px;
+  }
+
+  span h2 {
+    padding-bottom: 0;
+  }
+
+  .contact h2 a {
+    text-decoration: none;
+    color: firebrick;
+    margin-bottom: 0;
+    font-family:'Arimo', sans-serif;
+  }
+
+  .contact p, #email {
     text-align: center;
-    font-size: 24px;
-    font-family:"helvetica neue";
+    text-decoration: none;
+    color: black;
+    padding-top: none;
+    font-size: 18px;
+    display: block;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  .contact p {
+    text-decoration: none;
+  }
 
-    border: solid 3px salmon;
-  } */
+  .contact {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
 
-.services h2 {
-  color: firebrick;
-}
-
-.services ul {
-  display: flex;
-  flex-direction:row;
-  justify-content: space-around;
-  margin:  0 auto;
-  align-items: center;
-  padding-right: 20px;
-  padding-bottom: 60px;
-  padding-left: 20px;
-  flex-wrap: wrap;
-}
-
-.services li {
-  font-family: 'Helvetica Neue';
-  margin: 5px;
-  list-style: none;
-  font-size: 20px;
-}
-
-span h2 {
-  padding-bottom: 0;
-}
-
-.contact h2 a {
-  text-decoration: none;
-  color: firebrick;
-  margin-bottom: 0;
-  font-family:'Arimo', sans-serif;
-}
-
-.contact p, #email {
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  padding-top: none;
-  font-size: 18px;
-  display: block;
-  font-family: 'Helvetica Neue', sans-serif;
-}
-.contact p {
-  text-decoration: none;
-}
-
-.contact {
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-
+  }
 }
 
 
