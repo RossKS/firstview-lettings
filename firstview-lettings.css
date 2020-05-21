@@ -249,7 +249,36 @@ figcaption {
 }
 /* end services styling */
 
+form {
+margin: 0 auto;
+text-align: center;
+}
 
+
+.contact-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  align-items: flex-start;
+}
+div .details {
+  width: 25%;
+  padding: 20px;
+  font-family: Verdana;
+  border:
+  solid 3px firebrick;
+  color: black;
+  line-height: 20px;
+}
+
+.contact-form{
+  width: 75%;
+padding: 20px;
+font-family: verdana;
+
+}
 
 
 /* .photo-break {
