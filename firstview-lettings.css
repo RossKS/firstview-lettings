@@ -87,7 +87,7 @@ header,
 /* Style The Dropdown Button */
 
  .dropbtn {
-  background-color: white;
+
   color: black;
   padding: 0;
   font-size: 16px;
@@ -122,7 +122,7 @@ header,
 }
 
 .dropdown a {
-  background-color:  white;
+
   text-align: center;
   font-family: verdana;
 }
@@ -277,7 +277,23 @@ div .details {
   width: 75%;
 padding: 20px;
 font-family: verdana;
+}
 
+.lakeview {
+  display: flex;
+  font-family: verdana;
+
+}
+
+.normal {
+  width: 80%;
+  margin: 0 auto;
+  font-family: verdana;
+}
+
+h1 {
+  font-family: "Arimo", sans-serif;
+  text-align: center;
 }
 
 
