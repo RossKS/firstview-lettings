@@ -1,10 +1,7 @@
 body {
-  max width: 70%;
+
   background-color: #FFF;
   margin: 0;
-}
-
-body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -25,24 +22,16 @@ h2 {
   font-size: 1.8em;
 }
 
-header,
-.main-header {
-  padding-top: 0;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 3);
-}
-
 .main-header {
   background-color: white;
   border-bottom: solid 3px firebrick;
   padding-bottom: 3px;
   border-top: solid 3px firebrick;
-}
-
-.main-header {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 0;
-  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 3);
 }
 
 .main-header img {
@@ -51,13 +40,6 @@ header,
   margin-bottom: 5px;
   margin-top: 0;
   margin-left: 10px;
-}
-
-.main-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .main-nav {
@@ -77,6 +59,10 @@ header,
   font-size:16px;
 }
 
+.main-nav:last-child {
+  margin-right: 15px;
+}
+
 
 .dropdown ul {
   padding: 0;
@@ -87,7 +73,6 @@ header,
 /* Style The Dropdown Button */
 
  .dropbtn {
-
   color: black;
   padding: 0;
   font-size: 16px;
@@ -122,75 +107,24 @@ header,
 }
 
 .dropdown a {
-
+background-color: white;
   text-align: center;
   font-family: verdana;
 }
 
 /* end dropdown style */
 
-/* .title-banner {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 60px;
-  justify-content: center;
-} */
-
-/* .title-banner h1 {
-font-family: 'Mukta', sans-serif;
-}
-
-figcaption {
-  position: absolute;
-  top: 0;
-  /* left: 40%; */
-  /* width:90%;
-  color: white;
-} */
-
-/* main img {
-  width: 100%;
-  display: block;
-  padding-top: 1.5px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  border-bottom: solid lightslategray 1px;
-  border-top: solid lightslategray 1px;
-  box-shadow: 0 1px 3px 0px rgba(0, 0, 0, .2);
-  filter:grayscale(30%);
-} */
-
-/* main {
-  position: relative;
-} */
-
-.container {
-  width: 75%;
-  margin: 0 auto;
-}
 
 .main-footer a {
   text-decoration: none;
   color: black;
-  font-family: verdana, sans-serif;
 }
 
-.main-footer {
-  text-align: center;
-}
 
 .main-footer {
   display: flex;
   justify-content: space-between;
-  padding: 0;
   background-color: silver;
-  /* border-top: solid firebrick 2px; */
-  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 4); */
   font-size: 12px;
 }
 
@@ -210,16 +144,14 @@ figcaption {
 .flexy-boi {
   width: 85%;
   margin: 0 auto;
-  align-items: center;
-}
-
-.flexy-boi {
+  align-items:flex-start;
   display: flex;
   flex-direction: row;
   height: 30vh;
   font-size: 20px;
   font-family: 'Helvetica Neue', sans-serif;
 }
+
 
 .flexy-boi p {
   justify-content: center;
@@ -279,21 +211,40 @@ padding: 20px;
 font-family: verdana;
 }
 
-.lakeview {
+.lakeview, .marine-gardens {
   display: flex;
   font-family: verdana;
-
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-top: 40px;
 }
+
+.additional {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
 
 .normal {
   width: 80%;
   margin: 0 auto;
   font-family: verdana;
+  padding: 10px;
 }
 
 h1 {
   font-family: "Arimo", sans-serif;
   text-align: center;
+}
+
+ .subheading {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
 }
 
 
@@ -352,47 +303,6 @@ justify-content: space-between;
       margin-top: 0;
     }
 
-  /* .primary-col {
-    float: left;
-    width: 25%;
-  } */
-
-  /* .primary-col{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: verdana;
-    font-size: .8rem;
-    display: inline;
-    border: solid 2px lightcoral;
-  } */
-
-
-   /* main .primary-col {
-    position:absolute;
-    top: 15%;
-    right: 25px;
-    width: 25%;
-    padding-top: 0;
-    padding-right: 1em;
-    padding-bottom: 0;
-    padding-left: 1em;
-    font-size: 20px;
-    border: solid 2px lightcoral;
-    display: inline;
-    font-family: verdana;
-    /* background:
-      linear-gradient(to bottom, white, transparent 45%),
-      linear-gradient(to top, lightslategray, transparent 55%); */
-    /* color: black;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 6);
-  } */
-
-
-
-  .services h2 {
-    color: firebrick;
-  }
-
   .services ul {
     display: flex;
     flex-direction:row;
@@ -446,12 +356,7 @@ justify-content: space-between;
 
 /* End dropdown */
 
-header::after {
-content: "";
-display: table;
-clear: both;
 
-}
 
 main::after {
   content: "";
