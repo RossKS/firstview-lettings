@@ -1,9 +1,7 @@
 body {
-
-  background-color: #FFF;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   min-height: 100vh;
 }
 
@@ -14,16 +12,10 @@ body {
   padding-top: 0;
 }
 
-h2 {
-  margin-top: 10px;
-  font-family: 'Arimo', sans-serif;
-  text-align: center;
-  color: black;
-  font-size: 1.8em;
-}
+
+
 
 .main-header {
-  background-color: white;
   border-bottom: solid 3px firebrick;
   padding-bottom: 3px;
   border-top: solid 3px firebrick;
@@ -32,22 +24,17 @@ h2 {
   justify-content: space-between;
   flex-wrap: wrap;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:  white;
+
 }
 
-.main-header img {
-  display: inline;
-  padding-top: 0;
-  margin-bottom: 5px;
-  margin-top: 0;
-  margin-left: 10px;
-}
 
 .main-nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  align-content: flex-end;
   list-style: none;
 }
 
@@ -72,13 +59,13 @@ h2 {
 
 /* Style The Dropdown Button */
 
- .dropbtn {
+ /* .dropbtn {
   color: black;
   padding: 0;
   font-size: 16px;
   font-family: verdana, sans-serif;
   list-style: none;
-}
+} */
 
 .dropdown-content {
  display: none;
@@ -92,7 +79,7 @@ h2 {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-family: verdana;
+  font-family: verdana, sans-serif;
 }
 
 .dropdown-content a:hover {
@@ -113,7 +100,23 @@ background-color: white;
 }
 
 /* end dropdown style */
+h1 {
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+}
 
+h2 {
+  margin-top: 10px;
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+
+  font-size: 1.8rem;
+}
+
+main {
+  margin-top: 60px;
+  padding-top: 30px;
+}
 
 .main-footer a {
   text-decoration: none;
@@ -136,24 +139,33 @@ background-color: white;
   text-decoration-style: none;
 }
 
-.services {
-  width: 85%;
-  margin: 0 auto;
-}
 
-.flexy-boi {
-  width: 85%;
-  margin: 0 auto;
-  align-items:flex-start;
+.intro {
   display: flex;
-  flex-direction: row;
-  height: 30vh;
-  font-size: 20px;
-  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.flex {
+  /* align-items:flex-start; */
+  display: flex;
+  /* flex-direction: row; */
+  /* height: 30vh; */
+}
+
+.cstandard {
+  width: 85%;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px
+}
+.normal {
+  width: 80%;
+  margin: 0 auto;
+  font-family: verdana, sans-serif;
+  padding: 10px;
 }
 
 
-.flexy-boi p {
+.intro p {
   justify-content: center;
   padding: 10px;
   flex-wrap: wrap;
@@ -161,105 +173,88 @@ background-color: white;
 }
 
 /* services styling */
-.tenancy-title h2, .tenant-introduction-title h2,.inventory-prep-title h2, .letting-management-title h2, .tenant-enquiries-title h2 {
+.subp-title {
   margin-top: 20px;
   padding-top: 10px;
   font-family: 'Arimo', sans-serif;
   color: black;
   font-size: 1.8em;
-
   text-align: center;
 }
-.tenancy-body, .tenant-introduction-body, .inventory-prep-body, .letting-management-body, .tenant-enquiries-body {
-  width: 75%;
-  margin: 0 auto;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  padding-top: 5px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
+
 /* end services styling */
 
-form {
-margin: 0 auto;
-text-align: center;
-}
+  form {
+    margin: 0 auto;
+    text-align: center;
+  }
 
 
-.contact-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 80%;
-  align-items: flex-start;
-}
-div .details {
-  width: 25%;
-  padding: 20px;
-  font-family: Verdana;
-  border:
-  solid 3px firebrick;
-  color: black;
-  line-height: 20px;
-}
+  .contact-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    align-items: flex-start;
+  }
 
-.contact-form{
-  width: 75%;
-padding: 20px;
-font-family: verdana;
-}
+  div .details {
+    width: 25%;
+    padding: 20px;
+    font-family: Verdana;
+    border: solid 3px firebrick;
+    color: black;
+    line-height: 20px;
+  }
 
-.lakeview, .marine-gardens {
-  display: flex;
-  font-family: verdana;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 40px;
-  padding-top: 40px;
-}
+  .contact-form{
+    width: 75%;
+    padding: 20px;
+    font-family: verdana;
+  }
 
-.additional {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-}
+  .lakeview, .marine-gardens {
+    display: flex;
+    font-family: verdana;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
 
-
-.normal {
-  width: 80%;
-  margin: 0 auto;
-  font-family: verdana;
-  padding: 10px;
-}
-
-h1 {
-  font-family: "Arimo", sans-serif;
-  text-align: center;
-}
-
- .subheading {
-  width: 80%;
-  margin: 0 auto;
-  font-family: "Arimo", sans-serif;
-  font-weight: bold;
-}
+  .additional {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
 
 
-/* .photo-break {
-display: flex;
-width: 100%;
-max-height: 30vh;
-overflow: hidden;
-justify-content: space-between;
-}
+   .subheading {
+    margin: 0 auto;
+    font-family: "Arimo", sans-serif;
+    font-weight: bold;
+  }
 
-.photo-break img {
-  display: flex;
-  width: 25%;
-} */
+  .property {
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .image{
+    float: right;
+    padding: 10px;
+    margin-top: 20px;
+
+  }
+
+  div .image:nth-of-type(n+3) {
+    float: left;
+  }
+
 
 
 
@@ -270,30 +265,19 @@ justify-content: space-between;
   min-height: calc(100vh - 40px);
   }
 
-  /* header img,
- .dropdown a {
-   display: block;
-   text-align: center;
-   padding: 10px 15px;
-  } */
 
-  /* .dropdown a, nav .dropdown {
-    display: block;
-    text-align: center;
-  } */
-
-  .title-banner {
+  .index-title {
     color: black;
     background:
       url("images/key-in-door-cropped.webp"), no-repeat;
       background-size: cover;
       height: 450px;
-      text-align: center;
-      padding-top: 0;
+
+
       font-family: 'Arimo', sans-serif;
   }
 
-  .title-banner h1 {
+  .index-title h1 {
       color: #fff;
       width: 80%;
       margin: auto;
@@ -313,6 +297,7 @@ justify-content: space-between;
     padding-bottom: 60px;
     padding-left: 20px;
     flex-wrap: wrap;
+    flex: 1;
   }
 
   .services li {
@@ -356,7 +341,12 @@ justify-content: space-between;
 
 /* End dropdown */
 
+.main-header::after {
+content: "";
+display: table;
+clear: both;
 
+}
 
 main::after {
   content: "";
