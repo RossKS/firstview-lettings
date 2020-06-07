@@ -7,68 +7,30 @@
   </head>
   <body>
     <div class="wrap">
-      <header class="main-header">
-          <a href="firstview-lettings-home.html"><img src="images/main-logo.jpg" id="main-logo"></a>
-              <nav class="main-nav">
-
-
-                    <li><a  class="dropbtn" href="firstview-lettings-home.html">Home</a></li>
-
-
-                <nav class="dropdown">
-                  <ul>
-                    <li><a href="#">Landlords</a></li>
-                          <div class="dropdown-content">
-                            <li><a href="tenancy_application.html">Tenancy Applications</a></li>
-                            <li><a href="tenant-introduction-services.html">Tenant Introduction Service</a></li>
-                            <li><a href="inventory-preparation-services.html">Tenant Introduction & Inventory Preparation Service</a></li>
-                            <li><a href="letting-management.html">Letting Management Service</a></li>
-                          </div>
-                  </ul>
-                </nav>
-                <nav class="dropdown">
-                  <ul>
-                    <li><a href="#">Tenants</a></li>
-                        <div class="dropdown-content">
-                          <li><a href="tenancy_application.html">Tenancy Applications</a></li>
-                          <li><a href="tenant-enquiry.html">Tenant Enquiries</a></li>
-                        </div>
-                  </ul>
-                </nav>
-                <nav class="dropdown">
-                  <ul>
-                    <li><a href="#">About Us</a></li>
-                          <div class="dropdown-content">
-                            <li><a href="tenancy_application.html">Tenancy Applications</a></li>
-                            <li><a href="tenant-introduction-services.html">Tenant Introduction Service</a></li>
-                            <li><a href="inventory-preparation-services.html">Tenant Introduction & Inventory Preparation Service</a></li>
-                            <li><a href="letting-management.html">Letting Management Service</a></li>
-                          </div>
-                  </ul>
-                </nav>
-                <nav class="dropdown">
-                  <ul>
-                    <li><a href="#">Properties</a></li>
-                          <div class="dropdown-content">
-                            <li><a href="tenancy_application.html">Tenancy Applications</a></li>
-                            <li><a href="tenant-introduction-services.html">Tenant Introduction Service</a></li>
-                            <li><a href="inventory-preparation-services.html">Tenant Introduction & Inventory Preparation Service</a></li>
-                            <li><a href="letting-management.html">Letting Management Service</a></li>
-                          </div>
-                  </ul>
-                </nav>
-                <nav class="dropdown">
-                  <ul>
-                    <li><a href="#">Contact Us</a></li>
-                          <div class="dropdown-content">
-                            <li><a href="tenancy_application.html">Tenancy Applications</a></li>
-                            <li><a href="tenant-introduction-services.html">Tenant Introduction Service</a></li>
-                            <li><a href="inventory-preparation-services.html">Tenant Introduction & Inventory Preparation Service</a></li>
-                            <li><a href="letting-management.html">Letting Management Service</a></li>
-                          </div>
-                  </ul>
-                </nav>
-                </nav>
+      <header style="display:flex">
+        <div><a href="firstview-lettings-home.html"><img src="images/main-logo.jpg" id="main-logo"></a></div>
+          <nav class="main-nav">
+            <a href="firstview-lettings-home.html">Home</a>
+            <a href="properties.html">Properties</a>
+            <div class="drp">
+              <a href="landlord-services.html">Landlords</a>
+                <div class="ondrop">
+                  <li><a href="tenancy_application.html">Tenancy Applications</a></li>
+                  <li><a href="tenant-introduction-service.html">Tenant Introduction Service</a></li>
+                  <li><a href="inventory-preparation-services.html">Tenant Introduction & Inventory Preparation Service</a></li>
+                  <li><a href="letting-management.html">Letting Management Service</a></li>
+                </div>
+            </div>
+            <div class="drp">
+            <a href="tenant-services.html">Tenants</a>
+              <div class="ondrop">
+                <li><a href="tenancy_application.html">Tenancy Applications</a></li>
+                <li><a href="tenant-enquiries.html">Tenant Enquiries</a></li>
+              </div>
+            </div>
+            <a href="about-firstview-lettings.html">About</a>
+            <a href="php/index-contact.html">Contact</a>
+          </nav>
       </header>
     <main>
       <h1 class="subp-title">Letting Management Service</h1>
@@ -80,9 +42,24 @@
     </main>
     </div>
     <footer class="main-footer">
-       <span><a href="#" id="legal">Legal Notices</span>
-       <span id="copy">&copy Firstview Lettings Ltd 2004-2020.</span>
+      <div>
+        <span>Enquiries</span><br>
+        <a href="tel:07834 342897">07834 342897</a><br>
+        <a href="mailto:firstview.let@btinternet.com">firstview.let@btinternet.com</a>
+      </div>
+      <span>
+        Firstview Lettings Ltd.<br>
+        Registration No: 5098005<br>
+        Registered Office:<br>
+        367B Church Rd, Frampton Cotterell,<br>
+        Bristol, BS36 2AQ
+      </span>
+      <span id="copy">&copy Firstview Lettings Ltd 2004-2020.</span>
+      <div>
+       <a href="legal.html" id="legal">Legal Notices</a><br>
+       <a href="">Privacy Policy</a>
+      </div>
+      <span class="webdev">Crafted by Firstview Lettings Ltd</span>
     </footer>
-    <span class="webdev"><p>Website Developer Firstview Lettings Ltd</p></span>
   </body>
 </html>
