@@ -65,7 +65,7 @@
                             <span class="error"><?= $addressError?></span>
                           </p>
                           <p>
-                            <label for="subject">Subject</label><br>
+                            <label for="subject">Subject:</label><br>
                             <input type="text" id="subject" name="subject" placeholder="Please enter a subject" value="<?= $messageSubject?>" tabindex="3" ></input>
                             <span class="error"><?= $messageSubjectError?></span>
                           </p>
