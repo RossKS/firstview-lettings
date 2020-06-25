@@ -1,104 +1,145 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-      <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="firstview-lettings.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <title>Tenant Services | Firstview Lettings Ltd</title>
-      </head>
 
-      <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ross Kendall-Selwyn">
+  <meta name="description" content="Looking for a home to rent in Nottingham or Derby? We can help find you a home, hassle free. Call us now to start your search. ">
+  <meta name="keywords" content="Nottingham, Derby, Lettings, Properties, Homes to rent, homes to let, tenancy applications">
+  <link rel="stylesheet" href="stylesheets/firstview-lettings.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Tenant Services | Firstview Lettings Ltd</title>
+</head>
 
-        <div class="wrap">
-          <header style="display:flex">
-            <!-- <span class="headertest">doingverynicely</span> -->
-            <div><a href="firstview-lettings-home.html"><img src="images/main-logo.jpg" id="main-logo"></a></div>
-              <nav class="main-nav">
-                <a href="firstview-lettings-home.html">Home</a>
-                <div class="drp">
-                  <a href="landlord-services.html">Landlords</a>
-                    <div class="ondrop">
-                      <li><a href="tenancy_application.html">Tenancy Applications</a></li>
-                      <li><a href="tenant-introduction-services.html">Tenant Introduction Service</a></li>
-                      <li><a href="inventory-preparation-services.html">Tenant Introduction & Inventory Preparation Service</a></li>
-                      <li><a href="letting-management.html">Letting Management Service</a></li>
-                    </div>
-                </div>
-                <div class="drp">
-                <a href="tenant-services.html">Tenants</a>
-                  <div class="ondrop">
-                    <li><a href="tenancy_application.html">Tenancy Applications</a></li>
-                    <li><a href="tenant-enquiries.html">Tenant Enquiries</a></li>
-                  </div>
-                </div>
-                <a href="about-firstview-lettings.html">About</a>
-                <a href="php/index-contact.html">Contact</a>
-              </nav>
-          </header>
+<body>
 
-        <main>
-          <div class="landlords-landing">
-            <!-- A comprehensive residential property and letting management company -->
-            <div>
-              <h1 class="landlords-index">Tenant Services</h1>
+  <div class="wrap">
+    <div class="cookie-container">
+    <p>
+      We use cookies in this website for tracking and performance purposes. To find out more, read our
+      <a href="legal.html">privacy policy</a>. By using this site you consent to our use of cookies.
+    </p>
 
-            </div>
+    <button class="cookie-btn">
+      I accept
+    </button>
+  </div>
+    <header style="display:flex">
+      <div><a href="firstview-lettings-home.html"><img src="images/main-logo.jpg" id="main-logo" alt="firstview lettings logo"></a></div>
+      <nav class="nav flex-row flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link active" href="firstview-lettings-home.html">Home</a>
+        <a id="properties" class="flex-sm-fill text-sm-center nav-link" href="properties.html">Properties</a>
+        <div id="tenants" class="btn-group">
+          <a type="button" class="btn" href="tenant-services.html">Tenants</a>
+          <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="tenancy_application.html">Tenancy Applications</a>
+            <a class="dropdown-item" href="tenant-enquiries.html">Tenant Enquiries</a>
           </div>
-
-
-
-            <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Looking for a place to rent?</h1>
-              <p class="lead">Finding the right place can be stressful, but it doesnt need to be!<br>With our experience we can help find the perfect place for you. With access to our property listings, expert guidance and network of landlords we can help you save time and money. Through sustainable relationships and transparent processes you'll always know where you are in the process.</p>
-            </div>
-            </div>
-            <!-- <div class="block tenants-center">
-              <h3>Looking for a place to rent?</h3>
-              <p>Finding the right place can be stressful, but it doesnt need to be!<br>With our experience we can help find the perfect place for you. With access to our property listings, expert guidance and network of landlords we can help you save time and money. Through sustainable relationships and transparent processes you'll always know where you are in the process.</p>
-            </div> -->
-<div class="cstandard">
-            <div class="line block" id="tenancy-applications">
-            <h3>Tenancy Applications</h3>
-              <p>Tenancy Applications are assessed based on satisfactory responses to enquiries about the applicants credit history. In addition, employers, bank and personal references will also be required to support the tenants application. In some circumstances, a guarantor may be required in order that the tenants application is acceptable.</p>
-              <p>Credit history information is provided by specialised agencies who charge Firstview Lettings for this information. The charge for checking the applicants credit history is included in the <b>Application Fee</b>.</p>
-              <p>Both tenant and landlord will be required to enter into an Assured Shorthold Tenancy Agreement with each other and which will be prepared by Firstview Lettings Ltd. Typically, such agreements have an initial minimum fixed term of 6 months duration. The preparation of an Inventory Schedule itemising the condition of the fixtures and fittings within the property is strongly recommended.</p>
-              <p><b>Initial Payment</b> The tenant cannot be given the keys to a property for which a tenancy application is successful until the initial payment due to the landlord has been received by Firstview Lettings and has been cleared through the banking system. The initial payment is an amount equal to the first months rent plus a deposit bond of six weeks rent. The bond will be held by the Landlord as security against exceptional wear and tear or dilapidations in the condition of the property over the let period for which the tenant is responsible, and/or any other costs incurred by the Landlord which are the tenants responsibility under the agreement.</p>
+        </div>
+        <div id="landlords" class="btn-group">
+          <a type="button" class="btn" href="landlord-services.html">Landlords</a>
+          <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="tenancy_application.html">Tenancy Applications</a>
+            <a class="dropdown-item" href="tenant-introduction-service.html">Tenant Introduction Service</a>
+            <a class="dropdown-item" href="inventory-preparation-services.html">Tenant Introduction & Inventory Preparation Service</a>
+            <a class="dropdown-item" href="letting-management.html">Letting Management Service</a>
           </div>
-
-          <div class="block" id="tenant-introduction-services">
-            <h3>Tenant Introduction Services</h3>
-                <p>If you are looking for somewhere to rent, but can’t get what you need, where you want it, let us try and find it for you. We can get your property search underway right here from our website. Once we’ve added some brief details of the type of property you are looking for onto this page, those details are immediately available to our site visitors who may have just what you’ve been looking for!</p>
-                <p>Our website has hundreds of visitors each month, the majority of them are interested in letting or renting property.</p>
-                <p>Sorry, we do not currently have any “property wanted” enquiries.</p>
-                <p>If you'd like to know more about registering a property with us, or registering your interest in properties in a certain area you can let us know <a href="index-contact.php">here.</a></p>
+        </div>
+        <div class="dropdown">
+          <a id="services-tab" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu &#9776;
+          </a>
+          <div class="dropdown-menu" aria-labelledby="services-tab">
+            <a class="dropdown-item" href="landlord-services.html">Landlord Services</a>
+            <a class="dropdown-item" href="tenant-services.html">Tenant Services</a>
+            <a class="dropdown-item" href="properties.html">Properties</a>
+            <a class="dropdown-item" href="about-firstview-lettings.html">About</a>
+            <a class="dropdown-item" href="php/index-contact.html">Contact</a>
           </div>
-          </div>
+        </div>
+        <a id="about" class="flex-sm-fill text-sm-center nav-link" href="about-firstview-lettings.html">About</a>
+        <a id="contact" class="hide-sm flex-sm-fill text-sm-center nav-link" href="php/index-contact.html">Contact</a>
+      </nav>
+    </header>
 
+    <main>
+      <div class="services-landing">
+        <!-- <img src="images/oxford-houses-colorful-cropped.jpg"> -->
+        <div>
+          <h1 class="services-index">Tenant Services</h1>
+        </div>
+      </div>
 
-        </main>
+      <div class="jumbotron jumbotron-fluid">
+        <div div class="cstandard">
+          <h1 class="display-4">Looking for a home to rent?</h1>
+          <p class="lead">Finding the right place can be stressful, but it doesnt need to be!<br>With our experience we can help find the perfect place for you. With access to our property listings, expert guidance and network of landlords we can
+            help you save time and money. Through sustainable relationships and transparent processes you'll always know where you are in the process.</p>
+        </div>
+      </div>
+      <div class="cstandard">
+        <div class="red-line block" id="tenancy-applications">
+          <h3>Tenancy Applications</h3>
+          <p>Tenancy Applications are assessed based on satisfactory responses to enquiries about the applicants credit history. In addition, employers, bank and personal references will also be required to support the tenants application. In some
+            circumstances, a guarantor may be required in order that the tenants application is acceptable.</p>
+          <p>Credit history information is provided by specialised agencies who charge Firstview Lettings for this information. The charge for checking the applicants credit history is included in the <b>Application Fee</b>.</p>
+          <p>Both tenant and landlord will be required to enter into an Assured Shorthold Tenancy Agreement with each other and which will be prepared by Firstview Lettings Ltd. Typically, such agreements have an initial minimum fixed term of 6
+            months duration. The preparation of an Inventory Schedule itemising the condition of the fixtures and fittings within the property is strongly recommended.</p>
+          <p><b>Initial Payment</b> The tenant cannot be given the keys to a property for which a tenancy application is successful until the initial payment due to the landlord has been received by Firstview Lettings and has been cleared through the
+            banking system. The initial payment is an amount equal to the first months rent plus a deposit bond of six weeks rent. The bond will be held by the Landlord as security against exceptional wear and tear or dilapidations in the condition
+            of the property over the let period for which the tenant is responsible, and/or any other costs incurred by the Landlord which are the tenants responsibility under the agreement.</p>
         </div>
 
-        <footer class="main-footer">
-          <div>
-            <span>Enquiries</span><br>
-            <a href="tel:07834 342897">07834 342897</a><br>
-            <a href="mailto:firstview.let@btinternet.com">firstview.let@btinternet.com</a>
-          </div>
-          <span>
-            Firstview Lettings Ltd.<br>
-            Registration No: 5098005<br>
-            Registered Office:<br>
-            367B Church Rd, Frampton Cotterell,<br>
-            Bristol, BS36 2AQ
-          </span>
-          <span id="copy">&copy Firstview Lettings Ltd 2004-2020.</span>
-          <div>
-           <a href="legal.html" id="legal">Legal Notices</a><br>
-           <a href="">Privacy Policy</a>
-          </div>
-          <span class="webdev">Crafted by Firstview Lettings Ltd</span>
-        </footer>
-      </body>
+        <div class="block" id="tenant-introduction-services">
+          <h3>Tenant Introduction Services</h3>
+          <p>If you are looking for somewhere to rent, but can’t get what you need, where you want it, let us try and find it for you. We can get your property search underway right here from our website. Once we’ve added some brief details of the
+            type of property you are looking for onto this page, those details are immediately available to our site visitors who may have just what you’ve been looking for!</p>
+          <p>Our website has hundreds of visitors each month, the majority of them are interested in letting or renting property.</p>
+          <p>Sorry, we do not currently have any “property wanted” enquiries.</p>
+          <p>If you'd like to know more about registering a property with us, or registering your interest in properties in a certain area you can let us know <a href="index-contact.php">here.</a></p>
+        </div>
+        <div class="cta">
+        <button class="view-cta" href="properties.html">View Properties</button>
+      </div>
+      </div>
+
+
+    </main>
+  </div>
+
+  <footer class="main-footer">
+    <div>
+      <span>Enquiries</span><br>
+      <a href="tel:07834 342897">07834 342897</a><br>
+      <a href="mailto:firstview.let@btinternet.com">firstview.let@btinternet.com</a>
+    </div>
+    <span>
+      Firstview Lettings Ltd.<br>
+      Registration No: 5098005<br>
+      Registered Office:<br>
+      367B Church Rd, Frampton Cotterell,<br>
+      Bristol, BS36 2AQ
+    </span>
+    <span id="copy">&copy Firstview Lettings Ltd 2004-2020.</span>
+    <div>
+      <a href="legal.html" id="legal">Legal Notices</a><br>
+      <a href="">Privacy Policy</a>
+    </div>
+    <span class="webdev">Crafted by Firstview Lettings Ltd</span>
+  </footer>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="javascript/cookiescript.js"></script>
+</body>
 
 </html>
