@@ -4,9 +4,9 @@
 
 date_default_timezone_set('Europe/London');
 
-$name = $mailFrom = $messageSubject = $messageBody = $phone = $address = $radio = $success = '';
-$nameError = $mailFromError = $messageSubjectError = $messageBodyError = $phoneError = $addressError = $radioError =  '';
-    
+$name = $mailFrom = $class = $messageBody = $phone = $address = $radio = $success = '';
+$nameError = $mailFromError = $classError = $messageBodyError = $phoneError = $addressError = $radioError =  '';
+
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         if (empty($_POST["name"])) {
@@ -29,11 +29,11 @@ $nameError = $mailFromError = $messageSubjectError = $messageBodyError = $phoneE
             }
           }
 
-          if (empty($_POST["subject"])) {
-            $messageSubjectError = "Subject is required.";
+          if (empty($_POST["class"])) {
+            $classError = "Please select an option";
           } else {
-            $messageSubject = test_input($_POST["subject"]);
-            
+            $class = test_input($_POST["class"]);
+
           }
 
           if (empty($_POST["body"])) {
@@ -47,7 +47,7 @@ $nameError = $mailFromError = $messageSubjectError = $messageBodyError = $phoneE
             } else {
                 $phone = test_input($_POST['phone']);
             }
-          
+
 
             if (empty($_POST["address"])) {
                 $addressError = "Address is required.";
@@ -58,27 +58,28 @@ $nameError = $mailFromError = $messageSubjectError = $messageBodyError = $phoneE
                     $addressError = "Only letters, numbers and white space allowed.";
                   }
                 }
-        
+
             if(isset($_POST['time']))$radio = $_POST['time'];
-        
-        
+
+
             $txt = "Hello, you have recieved a web enquiry from: ".$name.
             "\n\n".$today = date("F j, Y, g:i a").
             "\n\n Phone Number: ".$phone.
             "\n\n Postcode: ".$address.
-            "\n\n Message Subject: ".$messageSubject.
+            "\n\n Type: ".$class.
             "\n\n Message: ".$messageBody.
             "\n\n Best time to call: ".$radio;
 
-          
+
                 $subject = ('Firstview Lettings Web Enquiry');
                 $mailTo = "rk.selwyn@gmail.com";
                 $headers = 'From:  ' . $name . ' <' . $mailFrom .'>';
 
-                if(mail($mailTo, $subject, $txt, $headers)){
-                    $success = "Message sent, thank you for your enquiry";
-                    $name = $mailFrom = $messageSubject = $messageBody = $phone = $address = $radio = '';
-                } 
+                  if(mail($mailTo, $subject, $txt, $headers)){
+                      $success = "Message sent, thank you for your enquiry";
+                      $name = $mailFrom = $messageBody = $phone = $address = $radio = '';
+                  }
+
             }
         function test_input($data) {
             $data = trim($data);
@@ -86,7 +87,7 @@ $nameError = $mailFromError = $messageSubjectError = $messageBodyError = $phoneE
             $data = htmlspecialchars($data);
             return $data;
         }
-    
-        
-        
+
+
+
 ?>
