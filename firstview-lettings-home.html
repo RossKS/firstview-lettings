@@ -7,12 +7,15 @@
   <meta name="author" content="Ross Kendall-Selwyn">
   <meta name="description" content="Click here to find houses and flats to rent in Nottingham and Derby. Visit our page to see our full range of landlord and tenant services.">
   <meta name="keywords" content="Nottingham, Derby, Heanor, Lettings, properties to let, homes to let, homes to rent, flats to let, property management">
-  <link rel="stylesheet" href="firstview-lettings.css">
+  <link rel="stylesheet" href="stylesheets/normalize.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/firstview-lettings.min.css">
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Firstview Lettings</title>
+  <link rel="shortcut icon" type="image/png" href="images/keys-logo.png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,19 +23,19 @@
     <div class="cookie-container">
       <p>
         We use cookies in this website for tracking and performance purposes. To find out more, read our
-        <a href="legal.html">privacy policy</a>. By using this site you agree to the use of cookies.
+        <a href="legal.html">privacy policy</a>. By using this site you consent to our use of cookies.
       </p>
       <button class="cookie-btn">
         I accept
       </button>
     </div>
-    <header style="display:flex">
+    <header >
       <a href="firstview-lettings-home.html"><img src="images/main-logo.jpg" id="main-logo" alt="firstview lettings logo"></a>
       <nav class="nav flex-row flex-sm-row">
-        <a class="flex-sm-fill text-sm-center nav-link active" href="firstview-lettings-home.html">Home</a>
+        <a id="home" class="flex-sm-fill text-sm-center nav-link active" href="firstview-lettings-home.html">Home</a>
         <a id="properties" class="flex-sm-fill text-sm-center nav-link" href="properties.html">Properties</a>
         <!-- <div id="tenants" class="btn-group"> -->
-          <a type="button" class="btn" id="tenants" href="tenant-services.html">Tenants</a>
+          <a role="button" class="btn" id="tenants" href="tenant-services.html">Tenants</a>
           <!-- <button type="button" id="dropdown" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="sr-only">Toggle Dropdown</span>
           </button>
@@ -42,7 +45,7 @@
           </div>
         </div> -->
         <!-- <div id="landlords" class="btn-group"> -->
-        <a type="button" class="btn" id="landlords" href="landlord-services.html">Landlords</a>
+        <a role="button" class="btn" id="landlords" href="landlord-services.html">Landlords</a>
         <!-- <button type="button" id="arrow" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="sr-only">Toggle Dropdown</span>
           </button>
@@ -54,19 +57,20 @@
           </div>
         </div> -->
         <div class="dropdown">
-          <a id="services-tab" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button id="services-tab" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu &#9776;
-          </a>
+          </button>
           <div class="dropdown-menu" aria-labelledby="services-tab">
+            <a class="dropdown-item" href="firstview-lettings-home.html">Home</a>
             <a class="dropdown-item" href="landlord-services.html">Landlord Services</a>
             <a class="dropdown-item" href="tenant-services.html">Tenant Services</a>
             <a class="dropdown-item" href="properties.html">Properties</a>
             <a class="dropdown-item" href="about-firstview-lettings.html">About</a>
-            <a class="dropdown-item" href="php/index-contact.html">Contact</a>
+            <a class="dropdown-item" href="php/index-contact.php">Contact</a>
           </div>
         </div>
         <a id="about" class="flex-sm-fill text-sm-center nav-link" href="about-firstview-lettings.html">About</a>
-        <a id="contact" class="hide-sm flex-sm-fill text-sm-center nav-link" href="php/index-contact.html">Contact</a>
+        <a id="contact" class="hide-sm flex-sm-fill text-sm-center nav-link" href="php/index-contact.php">Contact</a>
       </nav>
     </header>
 
@@ -80,45 +84,47 @@
           <div class="index-main">
             <div class="introduction">
               <h3>Trusted and Established</h3>
-              <p>Since 2004 we've been providing residential property letting and management services to landlords and tenants. Helping tenants to find homes and flats to let.</p>
+              <p>Since 2004 Firstview Lettings Ltd has been providing residential property letting and management services to landlords and tenants. Helping tenants find homes and flats to rent and helping landlords effectively manage their properties.</p>
               <h3>Reliable and Ready</h3>
-              <p>We understand the importance of having hands-on and accesible landlords. Having over 15 years of experience to call upon we can help both landlords and tenants navigate the letting process.</p>
+              <p>We understand the importance of having hands-on and accesible landlords. Having over 15 years of experience to call upon, we can help both landlords and tenants navigate the letting process.</p>
               <h3>Comprehensive Services</h3>
-              <p>By offering a range of landlord and tenant services we're able to best support the varied lifestyles of both investment landlords and experienced landlords, helping them to achieve their goals.</p>
-              <p>We offer our services in Nottinghamshire and Derbyshire's rural countryside towns and villages and work with a number of landlords in the area to provide a choice of homes to rent.</p>
-              <h3>Modern Living</h3>
-              <p>Firstview Lettings properties are perfect for families and individuals, we offer beautiful properties with modern fittings.</p>
+              <p>Offering a range of landlord and tenant services, we're able to best support the varied lifestyles of both investment landlords and experienced landlords, helping them to achieve their goals.</p>
+              <p>We offer our services in Nottinghamshire and Derbyshire's rural countryside towns and villages and work with landlords in the area to provide a choice of homes and apartments to rent.</p>
+              <h3>Rural Accommodation</h3>
+              <p>Our property listings are perfect for families and individuals that are seeking rental accommodation in the countryside. </p>
             </div>
+
             <div>
               <h2 class="index-subheading">Services</h2>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Tenancy Applications<a href="tenancy_application.html"><svg class="bi bi-arrow-right-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <li class="list-group-item">Tenancy Applications<a href="tenant-services.html"><svg class="bi bi-arrow-right-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                       <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
                       <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
                     </svg></a></li>
-                <li class="list-group-item">Tenant Introduction Services<a href="tenant-introduction-service.html"><svg class="bi bi-arrow-right-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    <li class="list-group-item">Letting Management Services<a href="landlord-services.html"><svg class="bi bi-arrow-right-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                          <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
+                          <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
+                      </svg></a></li>
+                <li class="list-group-item">Tenant Introduction Services<a href="landlord-services.html"><svg class="bi bi-arrow-right-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                       <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
                       <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
-                  </a></svg></li>
-                <li class="list-group-item">Tenant Introduction &amp; Inventory Preparation Services<a href="inventory-preparation-services.html"><svg class="bi bi-arrow-right-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                  </svg></a></li>
+                <li class="list-group-item">Tenant Introduction &amp; Inventory Preparation Services<a href="landlord-services.html"><svg class="bi bi-arrow-right-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                       <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
                       <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
-                  </a></svg></li>
-                <li class="list-group-item">Letting Management Services<a href="letting-management-service.html"><svg class="bi bi-arrow-right-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                      <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
-                      <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
-                  </a></svg></li>
+                  </svg></a></li>
                 <li class="list-group-item">Tenant Enquiries<a href="tenant-enquiries.html"><svg class="bi bi-arrow-right-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                       <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
-                      <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" /></a></svg></li>
+                      <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
+                    </svg></a></li>
               </ul>
             </div>
           </div>
@@ -129,18 +135,18 @@
           <div class="card-deck">
             <div class="card .h-100">
               <img src="images/full-lakeview.jpg" class="card-img-top" alt="View of lakeview apartments from the front.">
-              <div class="card-body">
+              <div class="card-body card-bottom">
                 <h5 class="card-title">One Bedroom Flat - Fishponds - Bristol</h5>
                 <p class="card-text">Modern one bedroom, secure second floor flat, 1 mile from city center.</p>
-                <a href="lakeview-apartments.html" class="btn btn-outline-danger">More Info</a>
+                <a href="lakeview-apartments.html" class="more-info">More Info</a>
               </div>
             </div>
             <div class="card .h-100">
               <img src="images/full-marine_gardens.gif" class="card-img-top" alt="view of marine gardens from the front.">
-              <div class="card-body">
+              <div class="card-body card-bottom">
                 <h5 class="card-title">One Bedroom Flat - Coleford - Gloucester</h5>
                 <p class="card-text">One bedroom, ground floor flat with double bedroom and modern kitchen.</p>
-                <a href="properties.html" class="btn btn-outline-danger">More Info</a>
+                <a href="properties.html" class="more-info">More Info</a>
               </div>
             </div>
           </div>
@@ -154,8 +160,8 @@
               <h4>We can help!</h4>
               <p>Our selection of modern properties and hands-on letting management allows you to focus on the <b><i>important</i></b> things in your life.</p>
               <div class="leftfloat-buttons">
-                <a href="properties.html">View Properties</a>
-                <a href="php/index-contact.html">Let's Chat</a>
+                <a role="button" href="properties.html">View Properties</a>
+                <a role="button" href="php/index-contact.php">Contact Us</a>
               </div>
             </div>
           </div>
@@ -165,8 +171,8 @@
               <h4>Let us help!</h4>
               <p>Call us today to learn how we can put your property in front of potential tenants.</p>
               <div class="rightfloat-buttons">
-                <a href="landlord-services.html">View Services</a>
-                <a href="php/index-contact.html">Let's Chat</a>
+                <a role="button" href="landlord-services.html">View Services</a>
+                <a role="button" href="php/index-contact.php">Contact Us</a>
               </div>
             </div>
           </div>
@@ -179,7 +185,7 @@
   <footer class="main-footer">
     <div>
       <span>Enquiries</span><br>
-      <a href="tel:07834 342897">07834 342897</a><br>
+      <a href="tel:07834342897">07834 342897</a><br>
       <a href="mailto:firstview.let@btinternet.com">firstview.let@btinternet.com</a>
     </div>
     <span>
@@ -189,12 +195,12 @@
       367B Church Rd, Frampton Cotterell,<br>
       Bristol, BS36 2AQ
     </span>
-    <span>&copy Firstview Lettings Ltd 2004-<span id="year"></span></span>
+    <span>&copy; Firstview Lettings Ltd 2004-<span id="year"></span></span>
     <div>
       <a href="legal.html" id="legal">Legal Notices</a><br>
-      <a href="">Privacy Policy</a>
+      <a href="sitemap.html">Sitemap</a>
     </div>
-    <span class="webdev">Crafted by Firstview Lettings Ltd</span>
+    <span class="webdev">Created by Firstview Lettings Ltd</span>
   </footer>
   <script>
     var d = new Date();
@@ -208,7 +214,7 @@
   <script>
     AOS.init();
   </script>
-  <script src="cookiescript.js"></script>
+  <script src="javascript/cookiescript.js"></script>
 </body>
 
 </html>
